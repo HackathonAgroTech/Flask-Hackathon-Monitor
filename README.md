@@ -32,3 +32,7 @@ E configurar as três variaveis de ambiente no [Heroku](http://herokuapp.com/)
         client_id=XXXXXXXXXXX
         client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         FLASK_APP=app.py
+
+Preencher com o nome do evento em
+
+        evento = 'Hackathon AGRO TECH'
