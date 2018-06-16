@@ -1,6 +1,8 @@
 # Monitor de Repositórios - Hackaton Dashboard
 
-Desenvolvido para monitorar e acompanhar os projetos do *3ª Hackaton da Faculdade Católica do Tocantins*
+Desenvolvido inicialmente para monitorar e acompanhar os projetos do *3ª Hackaton da Faculdade Católica do Tocantins*
+
+Utilizado para acompahar o desenvolvimento das equipes do *Hackathon AgroTech - Araguaína 2018*
 
 Disponível em [dashboard-hackton](https://dashboard-hackton.herokuapp.com)
 

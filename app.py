@@ -14,6 +14,7 @@ templates_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templ
 
 # app.secret_key = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(24)])
 app.secret_key = 'susper_secret_key'
+evento = 'Hackathon AGRO TECH'
 
 client_id = os.environ['client_id']
 client_secret = os.environ['client_secret']
@@ -23,16 +24,7 @@ token_url = 'https://github.com/login/oauth/access_token'
 
 def repositories():
     return [
-        'https://api.github.com/repos/felipegomesgit13/ConQuest',
-        'https://api.github.com/repos/brunomoraisti/AppMedigo',
-        'https://api.github.com/repos/brunnosales/argos2',
-        'https://api.github.com/repos/SkyList/Hackathon-prototipo',
-        'https://api.github.com/repos/vilmarferreira/Triagem-AVC',
-        'https://api.github.com/repos/juleow/projeto_hackathon',
-        'https://api.github.com/repos/DanielArrais/snitchdedoduro',
-        'https://api.github.com/repos/BersonCrios/HeavyBattleSpace',
-        'https://api.github.com/repos/saviossmg/RageAttack',
-        'https://api.github.com/repos/Adailsonacj/OvelhaRunner'
+        'https://api.github.com/repos/HackathonAgroTech/Hackathon-Monitor'
     ]
 
 # projeto deletado
@@ -87,7 +79,7 @@ def acompanhamento():
 
     details_todos.sort(key=operator.itemgetter('inativo', 'total_seconds_ago', 'name'))
     pages = os.listdir(templates_path)
-    return render_template('cards.html', data=details_todos, pages=pages)
+    return render_template('cards.html', data=details_todos, pages=pages, nome_evento=evento)
 
     # return jsonify(details_todos)
     # return repo_details('https://api.github.com/repos/aricaldeira/PySPED')
